@@ -1,0 +1,81 @@
+.todo-item-container {
+    background-color: beige;
+    margin: auto;
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 16px;
+    position: relative;
+    box-shadow: 0 4px 8px grey;
+}
+
+.todo-item-button-container {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+}
+
+button {
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.todo-item-complete-button {
+    display: inline-block;
+    position: relative;
+    background-color: #e0e92e;
+    border: none;
+    /* font-size: 28px; */
+    color: #000000;
+    /* padding: 20px; */
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.todo-item-complete-button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+.todo-item-complete-button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.todo-item-delete-button {
+    display: inline-block;
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    /* padding: 16px 32px; */
+    text-align: center;
+    /* font-size: 16px; */
+    margin: 4px 2px;
+    opacity: 0.9;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.todo-item-delete-button:hover {
+    opacity: 1;
+}
